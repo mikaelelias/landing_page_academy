@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(imagens/training-828741.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: block;    
+}
+
+header {
+    display: flex;
+    background-color: rgba(214, 213, 203, 0.212);
+    height: 5rem;
+    color: rgb(228, 231, 12);
+    font-size: 20px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: rgb(226, 226, 223);
+    margin-top: 1.5rem;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.name {
+    margin-top: 1.2rem;
+    font-size: 30px;
+}
+
+a {
+    color: #fcfafa;
+}
