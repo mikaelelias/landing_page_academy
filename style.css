@@ -21,6 +21,7 @@ header {
     height: 5rem;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .navegacao {
@@ -29,8 +30,7 @@ header {
     gap: 2rem;
     color: rgb(255, 255, 255);
     margin-top: 1.5rem;
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
 
 li {
