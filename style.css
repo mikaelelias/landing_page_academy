@@ -9,14 +9,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    display: block;    
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;    
 }
 
 header {
     display: flex;
     background-color: rgba(214, 213, 203, 0.212);
     height: 5rem;
-    color: rgb(228, 231, 12);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -24,11 +27,16 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: rgb(226, 226, 223);
+    color: rgb(255, 255, 255);
     margin-top: 1.5rem;
     font-size: 20px;
-    text-decoration: underline;
+    
 }
+
+li {
+    list-style-type: none;
+    text-decoration: underline;
+  }
 
 .name {
     margin-top: 1.2rem;
@@ -36,5 +44,32 @@ header {
 }
 
 a {
-    color: #fcfafa;
+    color:rgb(255, 255, 255);
 }
+
+.texto {
+    text-align: center;
+    color: white;
+    width: 58rem;
+    margin-top: 15rem;
+    font-size: 2rem;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.botoes input {
+    background-color: rgba(243, 243, 237, 0.507);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: navajowhite;
+    font: normal solid;
+    width: 13rem;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+
