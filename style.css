@@ -81,29 +81,52 @@ a {
     gap: 5rem;
     margin-top: 10rem;   
     padding: 10px; 
+    color: white;
+    font-size: 30px;
+}
+
+#txt1 {
+    margin-top: 12rem;
 }
 
 .basic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 20rem;
     height: 30rem;
     background-color:rgba(184, 185, 185, 0.164);
+    border-radius: 10px;
 }
 
 .plus {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 20rem;
     height: 30rem;
     background-color:rgba(184, 185, 185, 0.164);
+    border-radius: 10px;
 }
 
 .extreme {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 20rem;
     height: 30rem;
     background-color:rgba(184, 185, 185, 0.164);
+    border-radius: 10px;
 }
+
 
 .video {
     display: flex;
     align-items: center;
-    width: 100%;
     height: 60rem;
 }
+
+iframe {
+    width: 50vw;
+    height: 60vh;
+  }
