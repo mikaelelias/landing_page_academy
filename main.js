@@ -4,6 +4,6 @@ function agenda() {
 }
 
 function pacotes() {
-    var htmlElement = document.querySelector('.contato');
-    document.documentElement.scrollTop += 100;
-}   
+    window.scrollBy(0, 600);
+    scrollButton.removeEventListener('click', scrollTo100px);
+}
