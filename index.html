@@ -16,8 +16,6 @@
             <nav>
                 <ul class="navegacao">                   
                     <li><a href="Home">Home</a></li>
-                    <li><a href="Serviços">Serviços</a></li>
-                    <li><a href="Aulas">Aulas</a></li>
                     <li><a href="Agenda">Agenda</a></li>
                     <li><a href="Contato">Contato</a></li>
                     <li><a href="https://www.facebook.com/sua-página" target="_blank">
@@ -42,8 +40,8 @@
             </div>
 
             <div class="botoes">            
-                <input type="button" name="agendamento" class="agendamento" value="Agendar aula experimental">
-                <input type="button" name="contato" class="contato" value="Contato Personal trainer">
+                <button onclick="agenda()" class="agendamento">Agendar aula experimental</button>
+                <button onclick="planos()" class="contato">Conheça nossos planos</button>
             </div>
             
         </section>
@@ -79,50 +77,70 @@
         </div>
     </section>
 
-    <section>
-        <div class="agenda">
-            <form class ="cadastro">
-                Agende agora sua aula experimental
-
-                <label for="Nomeesobrenome">Nome e Sobrenome</label>
-                <input type="text" name="Nomeesobrenome" class="Input-padrao" required>
-
-                <label for="Nomeesobrenome">Nome e Sobrenome</label>
-                <input type="number" name="telefone" class="Input-padrao" required placeholder="(xx xxxxx-xxxx)">
-
-                <label for="estado">Estado</label>
-                <select class="estado" name="estado" class="Input-padrao">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                    <option value="EX">Estrangeiro</option>
-                </select>
-            </form>            
-        </div>
+    <section class="localidade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.314127675224!2d-34.83965162603467!3d-7.089537869498073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0a7a666853%3A0xdccfacd1290e82ec!2sAcademia%20Korpus%20Bessa!5e0!3m2!1spt-BR!2sbr!4v1683550792998!5m2!1spt-BR!2sbr" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
+    <section class="formulario_aula">
+        <form>
+            <p clas="txt3">Agende agora sua aula experimental</p>
+            <input type="text" name="nomeesobrenome" class="input-padrao" required placeholder="Nome e sobrenome">
+
+            <input type="tel" name="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="cidades">Informe sua CIDADE</label>
+            <select class="cidades" name="cidades">
+                <option value=""></option>
+                <option value="Água Branca">Água Branca</option>
+                <option value="Aguiar">Aguiar</option>
+                <option value="Alagoa Grande">Alagoa Grande</option>
+                <option value="Alagoa Nova">Alagoa Nova</option>
+                <option value="Alagoinha">Alagoinha</option>
+                <option value="Alcantil">Alcantil</option>
+                <option value="Algodão de Jandaíra">Algodão de Jandaíra</option>
+                <option value="Alhandra">Alhandra</option>
+                <option value="Amparo">Amparo</option>
+                <option value="Aparecida">Aparecida</option>
+                <option value="Araçagi">Araçagi</option>
+                <option value="Arara">Arara</option>
+                <option value="Araruna">Araruna</option>
+                <option value="Areia">Areia</option>
+                <option value="Areia de Baraúnas">Areia de Baraúnas</option>
+                <option value="Areial">Areial</option>
+                <option value="Aroeiras">Aroeiras</option>
+                <option value="Assunção">Assunção</option>
+                <option value="Baía da Traição">Baía da Traição</option>
+                <option value="Bananeiras">Bananeiras</option>
+                <option value="Baraúna">Baraúna</option>
+                <option value="Barra de Santa Rosa">Barra de Santa Rosa</option>
+                <option value="Barra de Santana">Barra de Santana</option>
+                <option value="Barra de São Miguel">Barra de São Miguel</option>
+                <option value="Bayeux">Bayeux</option>
+                <option value="Belém">Belém</option>
+                <option value="Belém do Brejo do Cruz">Belém do Brejo do Cruz</option>
+                <option value="Bernardino Batista">Bernardino Batista</option>
+                <option value="Boa Ventura">Boa Ventura</option>
+                <option value="Boa Vista">Boa Vista</option>
+                <option value="Bom Jesus">Bom Jesus</option>
+                <option value="Bom Sucesso">Bom Sucesso</option>
+                <option value="Bonito de Santa Fé">Bonito de Santa Fé</option>
+                <option value="Boqueirão">Boqueirão</option>
+                <option value="Borborema">Borborema</option>
+                <option value="Brejo do Cruz">Brejo do Cruz</option>
+                <option value="Brejo dos Santos">Brejo dos Santos</option>
+                <option value="Caaporã">Caaporã</option>
+                <option value="Cabaceiras">Cabaceiras</option>
+            </select>
+            <input type="datetime-local" class="input-padrao" required placeholder="Escolha a melhor Data">
+        </form> 
+
+        <footer>
+            <p class="copyright">&copy; Copyright POWER HEALTH - 2023</p>
+        </footer>        
+
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
