@@ -12,7 +12,7 @@ header {
     color: white;
 }
 
-.master {   
+.in {   
     background-image: url(imagens/adult-1850925.jpg); 
     height: 100rem;
     background-repeat: no-repeat;
@@ -25,18 +25,22 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
     font-size: 20px;
     text-decoration: none;    
 }
 
 li {
+    text-decoration-line: none;
     list-style-type: none;
     text-decoration: underline;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
 .name {
-    margin-top: 1.2rem;
+    margin-top: 3.2rem;
     font-size: 30px;
 }
 
@@ -44,9 +48,10 @@ a {
     color: white;
     text-decoration: none;
 }
- li {
-    text-decoration-line: none;
- }
+
+p {
+    text-transform: uppercase;
+}
 
 .texto {
     text-align: center;
@@ -93,44 +98,48 @@ a {
     align-items: center;    
     gap: 5rem;
     margin-top: 10rem;   
-    padding: 10px; 
+    padding: 12px; 
     color: white;
     font-size: 30px;
 }
 
 #txt1 {
-    margin-top: 12rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: brown;
 }
 
-.basic {
+.plus{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20rem;
+    width: 23rem;
     height: 30rem;
     background-color:rgba(184, 185, 185, 0.164);
     border-radius: 10px;
 }
 
-.plus {
+.ligth {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20rem;
+    width: 23rem;
     height: 30rem;
     background-color:rgba(184, 185, 185, 0.164);
     border-radius: 10px;
 }
 
-.extreme {
+.master {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20rem;
+    width: 23rem;
     height: 30rem;
     background-color:rgba(184, 185, 185, 0.164);
     border-radius: 10px;
 }
+
 
 .video {
     display: flex;
@@ -149,6 +158,12 @@ iframe {
     align-items: center;
     justify-content: center;
     height: 60rem;
+}
+
+.localidade h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
 }
 
 .formulario_aula {
@@ -188,10 +203,13 @@ form input {
     text-align: center;
 }
 
-.txt3 {
-    font-size: 30px;
-    text-transform: uppercase;
-    gap: 1;
+.input-enviar {
+    width: 30rem;
+    height: 4rem;
+}
+
+.input-enviar:hover {
+    background-color: rgb(142, 145, 144);
 }
 
 footer {
