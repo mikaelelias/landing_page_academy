@@ -37,7 +37,7 @@ li {
     margin-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
-  }
+}
 
 .name {
     margin-top: 3.2rem;
@@ -140,7 +140,6 @@ p {
     border-radius: 10px;
 }
 
-
 .video {
     display: flex;
     align-items: center;
@@ -150,7 +149,7 @@ p {
 iframe {
     width: 50vw;
     height: 60vh;
-  }
+}
   
 .localidade {
     background-color: rgba(14, 14, 19, 0.952);
